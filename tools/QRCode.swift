@@ -228,7 +228,7 @@ extension QRCode : UIImagePickerControllerDelegate, UINavigationControllerDelega
 }
 
  // MARK:- 生成二维码
-extension QRViewController {
+extension QRCode {
     
     // MARK:- 生成原始二维码图片
     class func getQRCodeImage(content : String, sizeWH : CGFloat) -> UIImage {
@@ -238,7 +238,7 @@ extension QRViewController {
         // 2.恢复默认设置
         filter.setDefaults()
         // 3.设置二维码数据
-        let data = "极客江南".dataUsingEncoding(NSUTF8StringEncoding)
+        let data = "德蒙.托尔斯泰".dataUsingEncoding(NSUTF8StringEncoding)
         filter.setValue(data, forKey: "inputMessage")
         // 4.从滤镜中刚取出二维码
         let ciImage = filter.outputImage!

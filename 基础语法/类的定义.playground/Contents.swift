@@ -31,7 +31,7 @@ print(st.age)
 st.name = "jinxiaofei"
 print(st.name) // 可选类型
 
-// 解包
+// 解包 可选绑定
 if let tempName = st.name {
     print(tempName)
 }

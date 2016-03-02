@@ -79,6 +79,13 @@ extension UIBarButtonItem {
 
 ```
 
+####swift创建单例
+- static + let 就可以设计单例
+
+```
+    static let shareIntance : NetworkTools = NetworkTools(baseURL: nil)
+```
+
 
 ####全局函数
 - Swift支持全局方法, 全局方法可以在当前所在的命名空间下随意调用, 以自定义的print方法为例(扩充打印内容, 更友好的提示打印内容的所在位置)
